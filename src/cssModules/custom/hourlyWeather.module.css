@@ -1,0 +1,8 @@
+.container {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  margin-top: 19px;
+  min-width: 25%;
+}

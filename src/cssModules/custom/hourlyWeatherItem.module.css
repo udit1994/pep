@@ -1,0 +1,13 @@
+.container {
+  align-items: center;
+  color: #7da6bb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto 5px;
+}
+
+.temperatureText {
+  font-size: 18px;
+  font-weight: 400;
+}
