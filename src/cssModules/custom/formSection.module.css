@@ -1,7 +1,7 @@
 .container {
   align-items: center;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .input {
@@ -39,5 +39,5 @@ input::placeholder {
   height: 81px;
   margin: 10px 10px 0 10px;
   padding-right: 10px;
-  width: 180px;
+  width: 100px;
 }
