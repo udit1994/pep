@@ -34,7 +34,10 @@ input::placeholder {
 
 .temperatureContainer {
   border-right: 1px solid white;
+  display: flex;
+  flex-direction: row-reverse;
   height: 81px;
   margin: 10px 10px 0 10px;
   padding-right: 10px;
+  width: 180px;
 }
