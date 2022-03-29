@@ -14,10 +14,20 @@ type InputProps = {
   placeholder?: string;
   style?: object;
   value: string | undefined;
+  autoComplete?: string;
 };
 
 const Input = (props: InputProps): React.ReactElement => {
-  const { className, label, style, onAction, id, placeholder, value } = props;
+  const {
+    className,
+    label,
+    style,
+    onAction,
+    id,
+    placeholder,
+    value,
+    autoComplete = "false",
+  } = props;
 
   const handleChange = useCallback(
     (e) => {
@@ -40,6 +50,7 @@ const Input = (props: InputProps): React.ReactElement => {
         style={style}
         type="text"
         value={value}
+        autoComplete={autoComplete}
       />
     </label>
   );

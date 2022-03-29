@@ -31,7 +31,7 @@ const useApp = (props: useAppProps): useAppReturnType => {
   const func = useCallback(
     async (_place) => {
       const geoLocationResponse = await fetch(
-        `http://api.openweathermap.org/geo/1.0/direct?q=${_place}&limit=5&appid=${process.env.REACT_APP_MY_APP_ID}&units=metric`
+        `https://api.openweathermap.org/geo/1.0/direct?q=${_place}&limit=5&appid=${process.env.REACT_APP_MY_APP_ID}&units=metric`
       );
 
       const jsonGeoLocationResponse = (await geoLocationResponse.json()) as any;

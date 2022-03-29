@@ -38,7 +38,11 @@ const adaptToApp = (weatherData: any) => {
   };
 };
 
-const getFormattedHourAndMin = (date: Date) => {
+const getFormattedHourAndMin = (date?: Date) => {
+  if (!date) {
+    return "";
+  }
+
   const hours = date.getHours().toString();
   const adaptedHours = hours.length === 1 ? `0${hours}` : hours;
 

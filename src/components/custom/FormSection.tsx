@@ -14,6 +14,10 @@ type FormSectionProps = {
   temperature?: number;
 };
 
+const handleSubmit = (e: any) => {
+  e.preventDefault();
+};
+
 const FormSection = (props: FormSectionProps) => {
   const { temperature, description, place, handleAction, id } = props;
 
@@ -32,7 +36,7 @@ const FormSection = (props: FormSectionProps) => {
           <Text className={styles.descriptionText}>{description}</Text>
         </div>
         <div>
-          <form>
+          <form onSubmit={handleSubmit}>
             <Input
               className={styles.input}
               id={id}
